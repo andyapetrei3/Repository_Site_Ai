@@ -1,0 +1,118 @@
+Salut! Am nevoie de ajutor cu un site pentru echipa mea de la facultate. 
+Suntem 4 studenți la FSEGA, Informatică Economică, anul 3, și ne zicem 
+"Endpoint Eagles". Vreau o pagină simplă de prezentare, one-page, cu meniu 
+sus care face scroll la fiecare secțiune. Să arate profi, dar tineresc. Se 
+adresează mai ales studenților de la IE, dar și altor persoane interesate de 
+noi. Totul în română, cu diacritice.
+
+Structura o vreau așa: meniu sus cu link-uri către Despre noi, Studii / 
+Experiență, Hobby-uri, Tabel și Contact. Sub meniu, un header cu titlul mare 
+"Endpoint Eagles" și dedesubt "Echipa noastră de la FSEGA - Informatică 
+Economică". Ca favicon pune emoji-ul 🦅.
+
+La "Despre noi" vreau câte un card pentru fiecare dintre noi, cu poză, nume, o 
+scurtă prezentare și un "Fun fact" ascuns într-un details. Fiecare card cu 
+culoare de fundal diferită. La finalul secțiunii, două poze cu FSEGA 
+suprapuse, a doua să apară la hover, plus un link către site-ul facultății.
+
+Mariabela Bradea Pintiuța – "Sunt studentă la FSEGA din Cluj-Napoca, în anul 
+3 la Informatică Economică. Îmi place ziua să fiu contabilă și noaptea să scriu 
+cod :) ." Poză: https://scontent.fomr1-1.fna.fbcdn.net/v/t39.30808-6/391755334_1128394021519675_1292230892515598149_n.jpg?stp=dst-jpg_tt6&cstp=mx800x792&ctp=s800x792&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Y0lp21plZBYQ7kNvwHLwo_O&_nc_oc=AdoPtzkxn5kTobILIKQr-DcaosLFfZ_NA2vREl5Ky97IeWGGf_-VAfiGCGT5isKfQOk&_nc_zt=23&_nc_ht=scontent.fomr1-1.fna&_nc_gid=pbLbsEp_RYfj2vtniO8_0Q&_nc_ss=7c2a8&oh=00_AQNCELE5NaBTfHu1ZoypJZgWPFknQRHn14jgHmhhKti7ew&oe=6ACEC286
+Fun fact: "Îmi place să petrec timp cu familia și ador animalele."
+
+Medeea Cezara Chiuariu – "Salut! Sunt Medeea, anul 3 la FSEGA. Sunt din 
+Suceava și de mică mi-a plăcut să desenez. M-a atras și tehnologia, așa că 
+îmi doresc să le îmbin. În timpul liber cânt la chitară, mă uit la filme de 
+groază și ador ceaiul de mentă de la Twinings. Anotimpul meu preferat e 
+toamna." Poză: https://media.licdn.com/dms/image/v2/D4D03AQG7l2MZP6Syug/profile-displayphoto-crop_800_800/B4DZuDkjbMIkAI-/0/1767438957615?e=1793232000&v=beta&t=YcmWwp_PKUkSIX2a90kPZBxGYrNwFFpi7alEIovYB44
+Fun fact: "Îmi place foarte mult să ies în natură și să mă plimb prin padure."
+
+Apetrei Andrei – "Sunt o persoană creativă căreia îi place să încerce lucruri 
+noi. Pasiunea pentru investiții mă ține conectat la piață, iar muzica, arta 
+și jocurile video îmi dau echilibrul perfect. Îmi place să socializez și să 
+ajut oamenii; cred că succesul se împarte." Poză: https://media.licdn.com/dms/image/v2/D4D03AQHOr5LD__qVCg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731678620851?e=1793232000&v=beta&t=Ig-4QzWYyg89b1nhY90tctmJ2P3JDvEkALW-xdSQtwg
+Fun fact: "Muzica și investițiile au un lucru comun: sunt pasiuni foarte 
+scumpe."
+
+Stein Bianca Maria – "Sunt Bianca, anul 3 la Informatică Economică. Îmi place 
+să îmbin informatica cu partea economică și să descopăr cum tehnologia poate 
+ajuta o afacere. Practic echitația de trei ani, iubesc dansul și voluntariatul 
+mă definește." Poză: https://scontent.fomr1-1.fna.fbcdn.net/v/t39.30808-1/453718688_122102780114446899_8214422549889710572_n.jpg?stp=dst-jpg_tt6&cstp=mx1065x1065&ctp=s200x200&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e99d92&_nc_ohc=8uH3ph6LiUwQ7kNvwEP22JV&_nc_oc=AdrfibUUZ3pY2zyr69CiPFfxzbQFuZGyffkhCRe9nsQaZxpkSVNZPpnaf8N8vuS9cng&_nc_zt=24&_nc_ht=scontent.fomr1-1.fna&_nc_gid=sXZqGbOhf2BpyumMoySrGw&_nc_ss=7b2a8&oh=00_AQM0evl9uF876RZZW4FjYvZEyslTwInwOJbpU7tGGdajsQ&oe=6ACD25C2
+Fun fact: "Îmi place mult dansul și vreau să mă reapuc."
+
+Pozele cu FSEGA:
+https://scontent.fomr1-1.fna.fbcdn.net/v/t39.30808-6/662073617_1354022023439029_4811720638728025078_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=f4Po6kgDEHwQ7kNvwE4ERGC&_nc_oc=Adpmma4Q_Y9hmmAEoLRaGwMNYjMR1Bb_mNXUUibVmix8r5P8HYcvDwLVuYQMQ6YR7Qk&_nc_zt=23&_nc_ht=scontent.fomr1-1.fna&_nc_gid=AdVhAmiB0kjdFgOFOeexIQ&_nc_ss=7c2a8&oh=00_AQOQrbV66hKZAXYO_sOFZG9BvmVJ6bgx8BsbmN2rjhzMpA&oe=6ACEEF23
+și cea de hover: https://econ.ubbcluj.ro/departamente/departamente/poze/DSCF1651.JPG
+Link facultate: https://econ.ubbcluj.ro
+
+La "Studii și experiență" vreau două părți, fiecare cu câte 4 casete:
+
+Studii:
+Mariabela – Școala Gimnazială nr 16 Oradea; Liceul Teoretic Aurel Lazăr Oradea 
+(Matematică Informatică, 2020-2024); FSEGA, Informatică Economică, 2024-2027.
+Medeea – Școala Gimnazială nr 9 Suceava; Colegiul Național "Petru Rareș" 
+Suceava (Matematică Informatică intensiv engleză, 2020-2024); FSEGA, 
+Informatică Economică, 2024-2027.
+Andrei – Colegiul Național "Mihai Eminescu" Suceava (Matematică Informatică, 
+2020-2024); FSEGA, Informatică Economică, 2024-2027.
+Bianca – Liceul Teoretic "Aurel Lazăr" Oradea (Matematică Informatică, 
+2020-2024); FSEGA, Informatică Economică, 2024-2027.
+
+Experiență:
+Mariabela – Internship și job ca contabil în HORECA (2021-2024), acum contabil 
+extern din 2025; proiect de teste matematice pentru o aplicație educativă 
+(Latex, Json); atestat informatică (HTML).
+Andrei – Robotică la Palatul Copiilor Suceava, fotbal la Luceafărul Suceava; 
+certificare Salesforce Business Analyst.
+Medeea – Internship Social Media la WolfArt o lună; voluntar la COCP (coordonez 
+Social Hub), Bucovina Ultra Rocks, TRIB Suceava și Salvați Copiii Suceava.
+Bianca – Voluntar OSE, ISU Crișana – SMURD, HR, Marketing și logistică.
+
+La "Hobby-uri" tot câte o casetă:
+Mariabela – animale (am o pisică, Athena), grădinărit, gătit.
+Medeea – alergat, drumeții (preferata pe Vârful Vlădeasa), chitară, citit, 
+desenat. Pune și un details cu "Care a fost drumeția mea preferată?"
+Andrei – chitară electrică, jocuri video, cântat, investiții. Un details cu 
+lista chitarelor lui.
+Bianca – echitație, voluntariat, călătorii, dans, filme romantice, timp cu 
+prietenii.
+
+Un tabel cu noi: Nr., Membru, An, Pasiune principală. Toți suntem Anul III.
+1 Mariabela – Contabilitate / Programare
+2 Medeea – Alergat / Drumeții
+3 Andrei – Chitară electrică
+4 Bianca – Voluntariat / Călătorit
+
+După tabel o secțiune mică cu bara de progres "Cât de bine lucrăm împreună ca 
+echipă", undeva la 60%.
+
+Formular de contact cu Nume, Email, Mesaj și buton Trimite. După el, link-urile 
+noastre de social media (toate cu target="_blank"):
+Facebook Mariabela: https://www.facebook.com/share/1DGA4dKZAz/
+Facebook Medeea: https://www.facebook.com/chiuariu.medeea
+Instagram Andrei: https://www.instagram.com/biancaa.stein?xtok=MTB3cm8wY3BhZ2pobw%3D%3D&utm_source=qr
+Instagram Bianca: https://www.instagram.com/biancaa.stein?xtok=MTB3cm8wY3BhZ2pobw%3D%3D&utm_source=qr
+(știu că ultimele două sunt identice, le repar eu după)
+
+Înainte de footer: "Vă place site-ul nostru?" cu un buton "Da" care rămâne 
+pe loc și unul "Nu" care fuge de cursor. În footer, copyright "© 2026 Endpoint 
+Eagles" și un buton "↑ Înapoi sus".
+
+Culorile le vreau pe mov/albastru pastel, ceva drăguț:
+fundal general #d1e1f7, text #292333. Header-ul mov închis #594080 cu text 
+alb. Link-urile din meniu #b279ec, la hover #5f299d. Fiecare card al nostru 
+are culoarea lui: Mariabela #98c99c, Medeea #b872d3, Andrei #9dbfd8, Bianca 
+#c86cb0. Casetele de la Studii și Hobby au un gradient drăguț din toate 
+culorile astea. Tabelul #ceadee. Formularul #ede7f6. Social media #d4afe7. 
+Butoanele #b279ec cu text alb, colțuri rotunjite.
+
+Font Arial normal, iar numele noastre Times New Roman italic ca să iasă în 
+evidență. Colțuri rotunjite peste tot, umbre subtile, tranziții fine la hover.
+
+Tehnologii: HTML5 semantic, CSS3 cu variabile, Flexbox și puțin Grid, fără 
+framework-uri. JavaScript doar pentru butonul "Nu" care fuge și pentru scroll 
+lin la "Înapoi sus". Responsive: pe mobil (sub 650px) să treacă pe o coloană 
+și tabelul să se poată derula orizontal.
+
+Dă-mi două fișiere separate, index.html și style.css, cu comentarii în română, 
+curate, gata de urcat pe GitHub Pages. Mersi!

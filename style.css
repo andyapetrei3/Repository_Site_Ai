@@ -1,0 +1,753 @@
+/* ==========================================================
+   ENDPOINT EAGLES - style.css
+   ========================================================== */
+
+/* ---------- 1. VARIABILE (paleta de culori) ---------- */
+:root {
+    --bg-page: #d1e1f7;
+    --text: #292333;
+    --header-bg: #594080;
+    --link: #b279ec;
+    --link-hover: #5f299d;
+
+    --c-mariabela: #98c99c;
+    --c-medeea: #b872d3;
+    --c-andrei: #9dbfd8;
+    --c-bianca: #c86cb0;
+    --gradient: linear-gradient(135deg, #98c99c, #9dbfd8, #b872d3, #c86cb0);
+
+    --table-bg: #ceadee;
+    --form-bg: #ede7f6;
+    --social-bg: #d4afe7;
+
+    --radius: 15px;
+    --radius-btn: 10px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.2);
+    --ease: linear  (0.2, 0.8, 0.2, 1);
+}
+
+/* ---------- 2. RESET ȘI BAZĂ ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-page);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1 { font-size: 48px; margin: 0; }
+h2 { font-size: 34px; margin: 0 0 40px; text-align: center; }
+h3 { font-size: 26px; margin: 0 0 12px; }
+h4 { font-size: 20px; margin: 0 0 8px; }
+
+/* Numele noastre: Times New Roman italic */
+.person-name {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+:focus-visible {
+    outline: 3px solid var(--link-hover);
+    outline-offset: 3px;
+}
+
+/* ---------- 3. MENIU (sticky, Flexbox) ---------- */
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 16px;
+    background-color: rgba(89, 64, 128, 0.92);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px 18px;
+    background-color: var(--link);
+    color: #fff;
+    text-decoration: none;
+    border-radius: var(--radius-btn);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s var(--ease);
+}
+
+.main-nav a:hover {
+    background-color: var(--link-hover);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Linie de progres la derulare (doar CSS, în browserele care o suportă) */
+.main-nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient);
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@supports (animation-timeline: scroll()) {
+    .main-nav::after {
+        animation: scroll-progress linear both;
+        animation-timeline: scroll(root);
+    }
+}
+
+@keyframes scroll-progress {
+    to { transform: scaleX(1); }
+}
+
+/* ---------- 4. HEADER (momentul central al paginii) ---------- */
+.site-header {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 20px 150px;
+    text-align: center;
+    background-color: var(--header-bg);
+    color: #fff;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+/* Bloburi de culoare care plutesc lent în fundal */
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.55;
+    animation: drift 14s ease-in-out infinite alternate;
+}
+
+.blob-1 { width: 340px; height: 340px; top: -90px; left: -80px; background: var(--c-medeea); }
+.blob-2 { width: 300px; height: 300px; top: 20px; right: -70px; background: var(--c-andrei); animation-delay: -5s; }
+.blob-3 { width: 260px; height: 260px; bottom: 10px; left: 38%; background: var(--c-bianca); animation-delay: -9s; }
+
+@keyframes drift {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(50px, 30px) scale(1.2); }
+}
+
+.eagle {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 72px;
+    line-height: 1;
+    filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.35));
+    animation: rise 0.9s var(--ease) both, float 4s ease-in-out 0.9s infinite;
+}
+
+.site-header h1 {
+    font-size: clamp(40px, 9vw, 96px);
+    line-height: 1.05;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, #ffffff, #e9d7fb 45%, #c9f0cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: rise 0.9s var(--ease) 0.15s both;
+}
+
+.hero-sub {
+    margin: 16px 0 28px;
+    font-size: 20px;
+    animation: rise 0.9s var(--ease) 0.3s both;
+}
+
+.pills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    animation: rise 0.9s var(--ease) 0.45s both;
+}
+
+.pills li {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+}
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-3deg); }
+    50%      { transform: translateY(-12px) rotate(3deg); }
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 70px;
+    fill: var(--bg-page);
+}
+
+/* ---------- 5. SECȚIUNI ---------- */
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 72px 20px 0;
+    scroll-margin-top: 80px;
+}
+
+.section-small {
+    max-width: 700px;
+}
+
+/* Linie colorată sub titlurile secțiunilor */
+.section h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 5px;
+    margin: 14px auto 0;
+    background: var(--gradient);
+    border-radius: 999px;
+}
+
+/* ---------- 6. DESPRE NOI: carduri (Grid, 2 coloane) ---------- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+/* Coloana din dreapta este coborâtă, pentru un ritm mai viu */
+.team-grid .card:nth-child(even) {
+    margin-top: 36px;
+}
+
+.card {
+    padding: 32px 24px;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.35s var(--ease), box-shadow 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: var(--shadow-hover);
+}
+
+.card:nth-child(even):hover {
+    transform: translateY(-8px) rotate(1deg);
+}
+
+.card-mariabela { background-color: var(--c-mariabela); }
+.card-medeea    { background-color: var(--c-medeea); }
+.card-andrei    { background-color: var(--c-andrei); }
+.card-bianca    { background-color: var(--c-bianca); }
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.4), 0 12px 24px rgba(0, 0, 0, 0.22);
+    transition: transform 0.35s var(--ease);
+}
+
+.card:hover .avatar {
+    transform: scale(1.06);
+}
+
+.card h3 {
+    font-size: 28px;
+}
+
+.card p {
+    margin: 0 0 12px;
+}
+
+/* details / summary (Fun fact, întrebări) */
+details {
+    margin-top: 14px;
+    padding: 12px 16px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-btn);
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "+";
+    font-size: 24px;
+    line-height: 1;
+    transition: transform 0.3s var(--ease);
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+details[open] > :not(summary) {
+    animation: rise 0.4s var(--ease) both;
+}
+
+details p,
+details ul {
+    margin: 10px 0 0;
+}
+
+/* ---------- 7. POZE FSEGA SUPRAPUSE ---------- */
+.fsega {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.fsega-photos {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto 28px;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: 12px 12px 0 var(--link);
+    transform: rotate(-2deg);
+    transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+
+.fsega-photos:hover {
+    transform: rotate(0deg);
+    box-shadow: 6px 6px 0 var(--link-hover);
+}
+
+.fsega-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* A doua poză este transparentă până la hover */
+.fsega-hover {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fsega-photos:hover .fsega-hover,
+.fsega-photos:focus-visible .fsega-hover {
+    opacity: 1;
+}
+
+/* ---------- 8. STUDII, EXPERIENȚĂ, HOBBY-URI: casete cu gradient ---------- */
+.section h3 {
+    text-align: center;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.box {
+    padding: 24px;
+    background: var(--gradient);
+    border: 1px solid #d5cddd;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.35s var(--ease), box-shadow 0.35s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Numele din casetă, ca etichetă */
+.box h3,
+.box h4 {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 4px 16px;
+    font-size: 22px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+}
+
+.box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.box li + li {
+    margin-top: 4px;
+}
+
+/* ---------- 9. TABEL ---------- */
+.table-wrap {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--table-bg);
+    border: 2px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: left;
+}
+
+th {
+    background-color: var(--header-bg);
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: rgba(89, 64, 128, 0.25);
+}
+
+/* ---------- 10. BARA DE PROGRES ---------- */
+.section-small h2 {
+    font-size: 28px;
+}
+
+.progress-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+progress {
+    flex: 1;
+    height: 28px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 999px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+progress::-webkit-progress-bar {
+    background-color: #fff;
+    border-radius: 999px;
+}
+
+progress::-webkit-progress-value {
+    background: var(--gradient);
+    border-radius: 999px;
+}
+
+progress::-moz-progress-bar {
+    background: var(--gradient);
+    border-radius: 999px;
+}
+
+.progress-value {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--header-bg);
+}
+
+/* ---------- 11. CONTACT ---------- */
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto 32px;
+}
+
+fieldset {
+    margin: 0;
+    padding: 24px;
+    background-color: var(--form-bg);
+    border: 1px solid var(--header-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+legend {
+    padding: 0 10px;
+    color: var(--header-bg);
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--text);
+    background-color: #fff;
+    border: 1px solid var(--header-bg);
+    border-radius: var(--radius-btn);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--link-hover);
+    box-shadow: 0 0 0 4px rgba(178, 121, 236, 0.35);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    margin-top: 20px;
+}
+
+/* Social media */
+.social-area {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: var(--social-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.social-area h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+    text-align: left;
+}
+
+.social-area ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.social-area a {
+    color: #5d073b;
+    transition: color 0.2s ease;
+}
+
+.social-area a:hover {
+    color: #050338;
+}
+
+/* ---------- 12. BUTOANE ---------- */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: var(--link);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-btn);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.1s ease-out;
+}
+
+.btn:hover {
+    background-color: var(--link-hover);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-big {
+    font-size: 20px;
+}
+
+/* ---------- 13. "VĂ PLACE SITE-UL NOSTRU?" ---------- */
+.vote {
+    text-align: center;
+}
+
+.vote-question {
+    margin: 0 0 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.vote-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Wrapper nemișcat: reper pentru butonul "Nu", care fuge (vezi scriptul din index.html) */
+.no-wrap {
+    display: inline-block;
+}
+
+/* ---------- 14. FOOTER ---------- */
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 72px;
+    padding: 40px 20px;
+    background-color: var(--header-bg);
+    color: #fff;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* ---------- 15. RESPONSIVE ---------- */
+@media (max-width: 650px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 22px; }
+
+    .main-nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .site-header {
+        padding: 56px 20px 110px;
+    }
+
+    .eagle { font-size: 56px; }
+    .hero-sub { font-size: 17px; }
+
+    .section {
+        padding-top: 56px;
+    }
+
+    /* O singură coloană */
+    .team-grid,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid .card:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .fsega-photos {
+        box-shadow: 8px 8px 0 var(--link);
+    }
+
+    /* Tabelul se derulează orizontal */
+    table {
+        min-width: 520px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 30px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 20px; }
+
+    .card,
+    .box,
+    fieldset,
+    .social-area {
+        padding: 20px 16px;
+    }
+
+    .avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .card h3 { font-size: 24px; }
+}
+
+/* Mișcare redusă, dacă utilizatorul o preferă */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
