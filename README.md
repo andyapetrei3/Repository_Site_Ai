@@ -1,57 +1,124 @@
-# 🦅 Endpoint Eagles
+\# PetsForAll 🐾
 
-Site web de prezentare (one-page) pentru echipa **Endpoint Eagles**, formată din 4 studenți în anul 3 la **FSEGA – Informatică Economică** (Universitatea Babeș-Bolyai, Cluj-Napoca).
 
-Pagina prezintă membrii echipei, studiile și experiența lor, hobby-urile și oferă un formular de contact.
 
-## Conținut
+Site de prezentare pentru un petshop numit \*\*PetsForAll\*\*, realizat ca temă de laborator la disciplina \*Generative AI\*.
 
-- **Despre noi** – câte un card pentru fiecare membru (poză, prezentare, „Fun fact"), plus două poze cu FSEGA suprapuse și link către site-ul facultății
-- **Studii / Experiență** – casete separate pentru fiecare membru
-- **Hobby-uri** – casete cu pasiunile fiecăruia
-- **Tabel** – recapitulare cu membrii echipei, urmat de o bară de progres
-- **Contact** – formular (nume, email, mesaj) și linkuri de social media
-- **Footer** – butonul „Nu" care fuge de cursor și butonul „↑ Înapoi sus"
 
-## Tehnologii
 
-- HTML5 semantic
-- CSS3 (variabile CSS, Flexbox, Grid, media queries pentru ecrane sub 650px și 480px)
-- JavaScript simplu, doar pentru butonul „Nu" și derularea lină la „Înapoi sus"
-- Fără framework-uri
+Proiectul a fost generat cu ajutorul unui instrument AI (Claude), apoi analizat, testat și personalizat manual.
 
-## Structura proiectului
 
-```
-endpoint-eagles/
-├── index.html   # structura paginii (JavaScript-ul este la finalul fișierului)
-├── style.css    # stilurile și paleta de culori
-└── README.md
-```
 
-## Rulare locală
+\---
 
-Deschide `index.html` într-un browser. Nu este nevoie de instalare sau de server.
 
-## Publicare pe GitHub Pages
 
-1. Urcă fișierele într-un repository GitHub.
-2. Mergi la **Settings → Pages**.
-3. La **Source** alege ramura `main` și folderul `/ (root)`.
-4. Site-ul va fi disponibil la `https://<utilizator>.github.io/<repository>/`.
+\## 📋 Descrierea proiectului
 
-## De completat înainte de publicare
 
-- Lista chitarelor din secțiunea „Hobby-uri" (momentan: „de completat").
-- Linkul de Instagram pentru Andrei (este identic cu cel al Biancăi).
-- Endpoint-ul formularului: în `index.html`, atributul `action` conține un ID de exemplu pentru [Formspree](https://formspree.io). GitHub Pages nu poate procesa formulare, deci este nevoie de un serviciu extern.
-- Pozele membrilor sunt încărcate de pe Facebook și LinkedIn, iar linkurile pot expira. Pentru stabilitate, salvează-le într-un folder `img/` și schimbă atributele `src`.
 
-## Echipa
+\*\*PetsForAll\*\* este un site responsive pentru un petshop care oferă:
 
-- Mariabela Bradea Pintiuța
-- Medeea Cezara Chiuariu
-- Apetrei Andrei
-- Stein Bianca Maria
+\- hrană și accesorii pentru animale de companie;
 
-© 2026 Endpoint Eagles
+\- servicii de îngrijire și grooming;
+
+\- consultanță veterinară.
+
+
+
+Publicul țintă: proprietari de animale de companie (câini, pisici, rozătoare, păsări) din mediul urban.
+
+
+
+\---
+
+
+
+\## 🧱 Structura paginii
+
+
+
+Pagina este împărțită în următoarele secțiuni:
+
+
+
+1\. \*\*Header\*\* – logo „PetsForAll” + meniu de navigare (`<nav>`) cu link-uri către secțiuni.
+
+2\. \*\*Hero\*\* – titlu principal, subtitlu și buton call-to-action („Programează o vizită”).
+
+3\. \*\*About\*\* – scurtă descriere a petshop-ului.
+
+4\. \*\*Services\*\* – 3 carduri: \*Hrană și accesorii\*, \*Îngrijire și grooming\*, \*Consultanță veterinară\*.
+
+5\. \*\*Contact\*\* – formular simplu (nume, email, mesaj) + date de contact.
+
+6\. \*\*Footer\*\* – copyright și link-uri sociale.
+
+
+
+\---
+
+
+
+\## 🎨 Design
+
+
+
+\- Stil: modern, prietenos, vesel, minimalist.
+
+\- Paletă de culori:
+
+&#x20; - Verde: `#2F855A`
+
+&#x20; - Albastru deschis: `#4299E1`
+
+&#x20; - Galben cald: `#F6E05E`
+
+&#x20; - Fundal crem: `#F7FAFC`
+
+&#x20; - Text închis: `#1A202C`
+
+\- Font: sans-serif (Poppins / system fonts).
+
+\- Carduri cu colțuri rotunjite și umbră discretă.
+
+\- Efecte hover pe carduri și butoane.
+
+
+
+\---
+
+
+
+\## ⚙️ Tehnologii utilizate
+
+
+
+\- \*\*HTML5 semantic\*\* – `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
+
+\- \*\*CSS3\*\* – fișier extern `style.css`
+
+\- \*\*Flexbox\*\* – pentru organizarea meniului, cardurilor și secțiunilor
+
+\- \*\*Media Queries\*\* – breakpoint la `768px` pentru responsive design
+
+\- Fără framework-uri externe (fără Bootstrap, Tailwind etc.)
+
+
+
+\---
+
+
+
+\## 📁 Fișiere
+
+PetsForAll/
+
+* &#x20;index.html # structura paginii
+* &#x20;style.css # stilizarea paginii
+* &#x20;prompt.txt # promptul inițial folosit pentru AI
+* README.md # acest fișier
+* &#x20;images/ # imagini utilizate (dacă există)
+
