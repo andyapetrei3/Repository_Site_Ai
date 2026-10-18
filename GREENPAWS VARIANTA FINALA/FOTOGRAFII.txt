@@ -1,0 +1,8 @@
+Fotografii ilustrative Pexels. Nu reprezintă clinica sau pacienții reali.
+hero.jpg: https://www.pexels.com/photo/6235650/
+centru-1.jpg: https://www.pexels.com/photo/6235120/
+centru-2.jpg: https://www.pexels.com/photo/30044028/
+centru-3.jpg: https://www.pexels.com/photo/6235663/
+centru-4.jpg: https://www.pexels.com/photo/6234607/
+centru-5.jpg: https://www.pexels.com/photo/32837319/
+centru-6.jpg: https://www.pexels.com/photo/19145895/

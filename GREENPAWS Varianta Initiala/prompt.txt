@@ -1,0 +1,34 @@
+Creează o aplicație web completă, modernă și extrem de complexă (single-page application / landing page interactiv) pentru un complex premium de cazare, îngrijire și relaxare destinată animalelor de companie, numit "Paws & Claws Resort", localizat în Cluj-Napoca (zona cartierului Zorilor / Bună Ziua).
+
+Proiectul trebuie să respecte cu strictețe următoarele cerințe structurale, de design și funcționalitate extinsă:
+
+1. ARCHITECTURE & STRUCTURE (Elemente HTML5 Semantice):
+- Top Bar & Main Header: Informații de contact rapid, indicator de status (Deschis Acum), logo stilizat („🐾 Paws & Claws Resort”), meniu de navigare (<nav>) cu tranziții fluide și buton rapid de acțiune „Rezervare Live”.
+- Hero Section: Prezentare vizuală de impact pe două coloane, titlu cu rezonanță, subtitlu descriptiv, butoane duble CTA și indicatori de încredere (Trust Badges).
+- Galeria Foto Exclusivă (Real-Life Visuals): Două secțiuni foto distincte cu grid-uri elegante (Flexbox/Grid):
+  a) „Oaspeții Noștri Fericiți” – instantanee cu animalele de companie în timpul activităților, în camerele de lux și în zona de spa.
+  b) „Echipa Paws & Claws” – portrete profesionale ale personalului și îngrijitorilor, însoțite de nume, rol și calificare.
+- Pachete Extinse de Servicii (Multi-Service Bundles):
+  O secțiune comparativă detaliată cu cel puțin 4-5 variante de pachete combinate (ex: Pachetul 'Daycare & Grooming', Pachetul 'Weekend Deluxe Spa', Pachetul 'VIP All-Inclusive & Medical Check', Pachetul 'Long Stay Vacation', Pachetul 'Recovery & Relaxation'). Fiecare card trebuie să conțină lista completă de servicii incluse, preț, economie realizată și buton de selectare directă.
+- Sistem Avanzat de Rezervare Online & Disponibilitate în Timp Real (Interactive Booking Calendar & Slot Matrix):
+  Formular interactiv de rezervare care permite utilizatorului:
+  - Selecția pachetului dorit și a speciei/taliei animalului.
+  - Alegerea datei și vizualizarea intervalelor orare (Time Slots).
+  - Un panou vizual de disponibilitate (Slot Status Bar) care afișează explicit orarele deja rezervate/ocupate (marcate stilistic cu roșu/disable) și orarele libere disponibile pentru selecție (marcate cu verde/interactiv).
+- Secțiune de Localizare și Harta Interactivă (Cluj-Napoca):
+  Descrierea exactă a locației din Cluj-Napoca, acces, facilități de parcare, alături de o zonă dedicată pentru Harta Locației (container stilizat / Google Maps iFrame sau hartă SVG mock-up) și program detaliat.
+- Footer Complex & Social Hub:
+  Secțiune de subsol organizată pe coloane, conținând sinteza brandului, linkuri rapide, abonare newsletter și o zonă proeminentă de Social Media (iconițe stilizate și feed preview pentru Instagram, Facebook, TikTok, YouTube).
+
+2. DESIGN SYSTEM & VISUAL IDENTITY:
+- Paletă de culori rafinată (salvată în variabile CSS :root):
+  - Verde Smarald Deep: #1B4D3E
+  - Auriu Cald / Accent Premium: #D4AF37 & #F9F6F0
+  - Albastru Pastel / Spa Accent: #EBF8FF
+  - Stări de disponibilitate: Verde Disponibil (#28A745), Roșu Ocupat (#DC3545)
+  - Text principal: #2C3E50
+- Tipografie curată (Poppins / Inter), ierarhie vizuală impecabilă, carduri cu colțuri fin rotunjite (16px–24px), umbre stratificate (box-shadow) și efecte de ridicare (translateY) la hover.
+
+3. TECHNICAL REQUIREMENTS:
+- Generează codul extras în două fișiere distincte: `index.html` (complet semantic) și `style.css` (folosind Flexbox, variabile CSS, reset complet și Media Queries la breakpoint-urile de 768px și 1024px pentru adaptabilitate mobilă totală).
+- Cod curat, modular, structurat profesional și complet responsive. Fără framework-uri externe (fără Bootstrap/Tailwind).
