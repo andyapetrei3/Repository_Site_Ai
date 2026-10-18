@@ -1,0 +1,40 @@
+Creează o platformă web completă, modernă și extrem de bine structurată pentru o clinică veterinară și centru integrat de sănătate pentru animale numită "GreenPaws Urban Vet & Care", situată în Cluj-Napoca (zona Mănăștur / Plopilor).
+
+Pagina trebuie să respecte următoarele instrucțiuni specifice de arhitectură informațională, design și funcționalitate avansată:
+
+1. STRUCTURĂ ȘI COMPONENTE OBLIGATORII (Semantic HTML5):
+- Navigation & Urgențe Header: Meniu principal cu tranziții elegante, logo medical-veterinar stilizat și buton distinctiv de alertă „Linia Roșie Urgențe 24/7 Cluj”.
+- Hero Section: Mesaj puternic axat pe empatie și rigoare medicală, butoane de apel la acțiune și prezentare vizuală a centrului.
+- Galeria Foto a Centrului și Cadrelor Medicale:
+  a) „Echipa Medicală și Specialiștii” – carduri cu fotografiile cadrelor medicale, asistenților și cosmeticianilor veterinari, menționând specializările și experiența.
+  b) „Viața în Centru / Pacienții Noștri” – galerie foto de înaltă calitate cu imagini din clinică, sălile de tratament, zona de relaxare și pacienții blănoși îngrijiți.
+- Diversitate de Pachete de Îngrijire Integrată (Multi-Service Bundles):
+  Prezentarea a cel puțin 5 pachete complexe care combină consultații, prevenție, igienă și servicii speciale:
+  - Pachetul 'Junior First Year' (Vaccinări + Deparazitare + Microcipare)
+  - Pachetul 'Senior Health Check' (Analize sângelui + Ecografie + Consultație cardiologică)
+  - Pachetul 'Full Care Day' (Tratament dermatologic + Grooming sanitar + Curățare dentară)
+  - Pachetul 'Profilaxie & Nutriție' (Plan alimentar + Teste de intoleranță + Detartraj)
+  - Pachetul 'Post-Operator & Recuperare' (Spitalizare de zi + Fizioterapie + Supraveghere)
+- Modul Interactiv de Programare & Programări Ocupate (Live Appointment Scheduler):
+  Formular de programare avansat ce permite pacientului:
+  - Selectarea medicului, a serviciului/pachetului și a speciei animalului.
+  - Vizualizarea orarului pe zile și intervale orare.
+  - Un panou dinamic de disponibilitate (Occupied vs. Available Slots) unde intervalele orare deja ocupate sunt afișate clar ca fiind nedisponibile, permițând selectarea doar a intervalelor libere.
+- Harta Locației din Cluj-Napoca și Detalii de Acces:
+  Prezentarea exactă a adresei din Cluj-Napoca, indicații de navigare GPS, alături de o zonă vizuală dedicată pentru Harta Locației (container hartă interactiv/SVG) și orarul de funcționare.
+- Footer Extins & Rețele de Socializare:
+  Subsol organizat pe coloane de interes, formular rapid pentru sfaturi prin email și secțiune social media cu iconițe și linkuri către paginile oficiale (Facebook, Instagram, LinkedIn, YouTube).
+
+2. DESIGN SYSTEM & ACCESSIBILITATE:
+- Paletă cromatică curată și profesională (salvată în :root):
+  - Verde Mentă / Teal Medical: #2A9D8F
+  - Albastru Clinic / Încredere: #457B9D
+  - Accent Galben Cald: #E9C46A
+  - Culori de stare: Roșu Ocupat (#E74C3C), Verde Liber (#2ECC71)
+  - Fundaluri: #F8F9FA și #FFFFFF | Text: #212529
+- Tipografie lizibilă, efecte vizibile de focus (`:focus-visible`), colțuri rotunjite (12px–16px), umbre suave și tranziții de hover pentru o experiență de navigare fluidă.
+
+3. CERINȚE TEHNICE DE PREDARE:
+- Codul va fi generat complet în două fișiere distincte: `index.html` și `style.css`.
+- Se vor folosi exclusiv HTML5 semantic, CSS3 (Flexbox, variabile root, Media Queries pentru ecrane mobile de max-width 768px).
+- Fără framework-uri sau librării externe.
