@@ -7,8 +7,7 @@ GreenPaws Urban Vet & Care – site de prezentare pentru un centru veterinar.
  2. Descriere
 
 Site-ul prezintă o clinică veterinară, echipa și pachetele sale de îngrijire. Se adresează proprietarilor de animale și oferă informații despre servicii și un formular demonstrativ de programare.
-
-Scopul proiectului este să ofere o prezentare clară și prietenoasă a centrului, astfel încât vizitatorii să găsească rapid serviciile, specialiștii și informațiile de contact. Fotografiile au rol ilustrativ, iar site-ul este un proiect educațional.
+Scopul proiectului este să ofere o prezentare clară și prietenoasă a centrului, astfel încât vizitatorii să găsească rapid serviciile, specialiștii și informațiile de contact. Fotografiile au rol ilustrativ și completează prezentarea facilităților și a atmosferei centrului.
 
  3. Planificarea și structura
 
@@ -27,18 +26,17 @@ Pagina include prezentarea clinicii, cardurile echipei, fotografii ilustrative, 
 
 Am folosit Codex și Claude pentru generarea și personalizarea proiectului. Tehnologiile utilizate sunt **HTML5, CSS3, Flexbox, CSS Grid, Media Queries și JavaScript**, alături de imagini JPG, elemente SVG și sunete MP3. Platforma aleasă pentru publicare este GitHub Pages.
 
-Structura paginii se află în `index.html`, iar aspectul este definit în `style.css`. Codul JavaScript este inclus în fișierul HTML și controlează meniul mobil, pachetele, calendarul și sunetele. Fotografiile și fișierele audio sunt păstrate local în folderele `img/` și `audio/`.
+Structura paginii se află în index.html, iar aspectul este definit în style.css. Codul JavaScript este inclus în fișierul HTML și controlează meniul mobil, pachetele, calendarul și sunetele. Fotografiile și fișierele audio sunt păstrate local în folderele img/ și audio/.
 
- 5. Analiza codului
-
-- **HTML5 semantic:** `header`, `nav`, `main`, `section`, `article` și `footer` organizează conținutul. `figure` și `figcaption` asociază imaginile cu descrierile lor.
-- **Flexbox:** aliniază sigla și meniul, textul și fotografia principală, cardurile echipei și pachetele. `flex-wrap` permite trecerea pe rânduri noi.
-- **Responsive design:** regulile `@media` schimbă aranjarea pe ecrane mici. Sub 768 px apare meniul mobil, galeria trece la două coloane și sunt reduse dimensiunile și spațierile.
-- **Îmbunătățire posibilă:** programările sunt simulate și dispar la reîncărcare. Pentru utilizare reală, formularul ar trebui conectat la un backend și la o bază de date.
-
-De exemplu, `.booking` folosește Flexbox pentru a pune formularul și calendarul unul lângă altul pe desktop. La maximum 1024 px, acestea sunt așezate vertical. Galeria folosește CSS Grid, iar calendarul este organizat în șapte coloane, corespunzătoare zilelor săptămânii. Imaginile folosesc `object-fit: cover` pentru a umple cardurile fără deformare.
-
-O altă îmbunătățire ar fi reunirea regulilor CSS repetate, pentru ca fișierul de stil să fie mai ușor de întreținut.
+5. Analiza codului
+- HTML5 semantic: elementele header, nav, main, section, article și footer organizează pagina în zone clare. figure și figcaption asociază fotografiile cu descrierile lor.
+- Flexbox: aliniază sigla și meniul, textul și fotografia principală, cardurile echipei și pachetele. În .booking, așază formularul și calendarul unul lângă altul. Proprietatea flex-wrap permite trecerea elementelor pe rânduri noi când spațiul este insuficient.
+- CSS Grid și imagini: galeria folosește o grilă pentru aranjarea fotografiilor, iar calendarul are șapte coloane, câte una pentru fiecare zi a săptămânii. Proprietatea object-fit: cover permite fotografiilor să umple cardurile fără deformare.
+- Responsive design: regulile @media adaptează pagina la dimensiunea ecranului. La maximum 1024 px, formularul și calendarul sunt așezate vertical. La maximum 768 px, apare meniul mobil, galeria trece la două coloane și sunt reduse dimensiunile textului și spațierile.
+  
+Probleme identificate și îmbunătățiri posibile
+- Programările sunt simulate și dispar la reîncărcarea paginii. O îmbunătățire ar fi conectarea formularului la un backend și la o bază de date, pentru salvarea lor.
+- Unele reguli CSS sunt repetate. Reunirea acestora ar face fișierul de stil mai clar și mai ușor de modificat. îmbunătățire ar fi reunirea regulilor CSS repetate, pentru ca fișierul de stil să fie mai ușor de întreținut.
 
  6. Modificări și personalizare
 
@@ -63,7 +61,7 @@ Limitări rămase: programările și newsletterul sunt demonstrative, legăturil
 
  8. Ce am învățat
 
-Noi am învățat să formulăm prompturi clare, precizând tema site-ului, publicul și funcționalitățile dorite. Am observat că solicitările concrete, precum extinderea calendarului sau limitarea telefonului la cifre, duc la rezultate mai ușor de verificat.
+Am învățat să formulăm prompturi clare, precizând tema site-ului, publicul și funcționalitățile dorite. Am observat că solicitările concrete, precum extinderea calendarului sau limitarea telefonului la cifre, duc la rezultate mai ușor de verificat.
 
 Analiza codului ne-a ajutat să înțelegem rolul HTML în organizarea conținutului, al CSS în aspectul paginii și al JavaScript în interacțiuni. Am învățat cum Flexbox, Grid și regulile `@media` contribuie la adaptarea site-ului pentru ecrane diferite.
 
