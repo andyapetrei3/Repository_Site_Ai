@@ -68,4 +68,4 @@ Analiza codului ne-a ajutat să înțelegem rolul HTML în organizarea conținut
 Prin alegerea fotografiilor, modificarea textelor și adăugarea sunetelor, am învățat să personalizăm rezultatul. Am înțeles și că un site generat cu AI trebuie analizat și testat, deoarece poate conține texte provizorii sau funcționalități demonstrative.
 
 9. Link GitHub Pages
-Link: https://andyapetrei3.github.io/Repository_Site_Ai/
+ https://andyapetrei3.github.io/Repository_Site_Ai/
