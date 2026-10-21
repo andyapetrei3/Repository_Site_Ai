@@ -24,7 +24,7 @@ Pagina include prezentarea clinicii, cardurile echipei, fotografii ilustrative, 
 
  4. Instrumente AI și tehnologii
 
-Am folosit Codex și Claude pentru generarea și personalizarea proiectului. Tehnologiile utilizate sunt **HTML5, CSS3, Flexbox, CSS Grid, Media Queries și JavaScript**, alături de imagini JPG, elemente SVG și sunete MP3. Platforma aleasă pentru publicare este GitHub Pages.
+Am folosit Codex Claude si Gemini pentru generarea și personalizarea proiectului. Tehnologiile utilizate sunt **HTML5, CSS3, Flexbox, CSS Grid, Media Queries și JavaScript**, alături de imagini JPG, elemente SVG și sunete MP3. Platforma aleasă pentru publicare este GitHub Pages.
 
 Structura paginii se află în index.html, iar aspectul este definit în style.css. Codul JavaScript este inclus în fișierul HTML și controlează meniul mobil, pachetele, calendarul și sunetele. Fotografiile și fișierele audio sunt păstrate local în folderele img/ și audio/.
 
